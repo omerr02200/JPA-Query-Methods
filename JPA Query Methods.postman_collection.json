@@ -1,0 +1,463 @@
+{
+	"info": {
+		"_postman_id": "e0acd658-d774-4747-af26-31cc2c5265ad",
+		"name": "JPA Query Methods",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42541967"
+	},
+	"item": [
+		{
+			"name": "Customer Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Veli\",\r\n    \"email\":\"veli@mail.com\",\r\n    \"task\":\"editor\",\r\n    \"salary\":33000,\r\n    \"created\":\"2024-11-14T07:43:18Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/save",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Save All",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"username\":\"Adem\",\r\n    \"email\":\"adem@mail.com\",\r\n    \"task\":\"editor\",\r\n    \"salary\":33000,\r\n    \"created\":\"2024-06-25T22:29:50Z\"\r\n},\r\n{\r\n    \"username\":\"Zeki\",\r\n    \"email\":\"zeki@mail.com\",\r\n    \"task\":\"moderator\",\r\n    \"salary\":33000,\r\n    \"created\":\"2024-09-05T00:44:58Z\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/saveAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"saveAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer List",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Search",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/customer/equals?text=ali",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"equals"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "ali"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Customer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/singleCustomer?id=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"singleCustomer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Like",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/like?text=i",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"like"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "i"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/in?texts=ali, veli, adem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"in"
+					],
+					"query": [
+						{
+							"key": "texts",
+							"value": "ali, veli, adem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Not In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/notin?texts=ali, veli, adem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"notin"
+					],
+					"query": [
+						{
+							"key": "texts",
+							"value": "ali, veli, adem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer NotLike",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/notlike?text=v",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"notlike"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "v"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Equals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/equals?text=Adem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"equals"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "Adem"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Contains",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/contains?text=ek",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"contains"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "ek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer NotContains",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/notcontains?text=a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"notcontains"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer StarsWith",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/starswith?text=a",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"starswith"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer EndsWith",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/endswith?text=li",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"endswith"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "li"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Created Between",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/between?salaryStart=24000&salaryEnd=35000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"between"
+					],
+					"query": [
+						{
+							"key": "salaryStart",
+							"value": "24000"
+						},
+						{
+							"key": "salaryEnd",
+							"value": "35000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Salary Less Than",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/lessthan?salary=40000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"lessthan"
+					],
+					"query": [
+						{
+							"key": "salary",
+							"value": "40000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Customer Salary Greater Than",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/greaterthan?salary=20000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"greaterthan"
+					],
+					"query": [
+						{
+							"key": "salary",
+							"value": "20000"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
