@@ -5,7 +5,7 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
 - Öncelikle Customer adlı bir entity oluşturup, sonra repository sınıfı oluşturularak veritabanı ile ilişki kuracak metotlar burada tanımlanır. Sonra servis eklenip, uygulamaya yaptırmak istediğimiz işlerin metotları tanımlanır. Son olarak da kullanıcı ile uygulama arasında köprü görevi gören, servislerin tetiklenmesini sağlayan restcontroller sınıfı eklenip ilgili metotlar eklenir.
 - Repository katmanında metotlar tanımlanırken, manuel olarak yazmak yerine, ide içerisinde bu metotları barındıran Jpa Designer(Buddy) kullanılarak, otomatik oluşturulması sağlanır.
 
-jpa designer.png
+<img src="query method images/001_jpa designer.PNG" width=300 />
 
 * Metotlar:
 * Equals Metodu: Veriler içerisinde, belirtilen bir değere eşit verilerin listelenmesini sağlayan metottur. Bu metot için Entity nesnemizin userName alanı kullanılmıştır.Repository katmanında metodu eklemek için sırasıyla aşağıdaki işlemler yapılır.
