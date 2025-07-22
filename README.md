@@ -8,4 +8,8 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
 jpa designer.png
 
 * Metotlar:
-* Equals Metodu: Veriler içerisinde, belirtilen bir değere eşit verilerin listelenmesini sağlayan metottur. Bu metot için Entity nesnemizin userName alanı kullanılmıştır.
+* Equals Metodu: Veriler içerisinde, belirtilen bir değere eşit verilerin listelenmesini sağlayan metottur. Bu metot için Entity nesnemizin userName alanı kullanılmıştır.Repository katmanında metodu eklemek için sırasıyla aşağıdaki işlemler yapılır.
+1 - Jpa Designer penceresinde, Find Collection çift tıklanır açılan pencerede “+” butonu ya da Add query condition tıklanır.
+2- Açılan pencerede attribute kısmında … nokta tıklanarak işlem yapmak istediğimiz alan seçilir.
+3- Condition alanından, ilgili metot seçilir.
+4- Son olarak da, aranmasını istediğimiz değerin, kçük büyük harf duyarlı olmasını istemiyorsak Ignor Case seçeneği işaretlenir. İlgili metot görseldeki gibi eklenmiş olur.
