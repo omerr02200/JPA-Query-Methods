@@ -41,3 +41,10 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
   <p>
     <img src="query method images/008_equals method postman.png" height=500 width=600 />
   </p>
+------------
+
+**Diğer metotları ekleyip, çalıştırmak için bu yol takip edilir.**
+
+### Diğer metotların işlevleri:
+* **Like:** Bulunmasını istediğimiz bir değer, bir verinin, başında, sonunda veya başı ile sonu arasında mı diye kontrol edilmesini sağlayan metottur. Oluşturulan bir desene göre sonuçların listelenmesi sağlanır. Uygulamamızda, aranmasını istediğimiz değerden önce kullandığımız "%", bu değerin, bir kelimenin ilk harfinden sonra içerip içermediğine bakar.
+* **NotLike:** Belirtilen bir değeri, belirtilen desene göre, içermeyenleri kontrol eder. Uygulamamızda, aranmasını istediğimiz değerden sonra kullandığımız "%", bu değeri, herhangi bir kelimenin son harfinden önce içermeyenlerin listelenmesini sağlar.
