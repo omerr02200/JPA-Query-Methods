@@ -28,3 +28,23 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
   <p>
     <img src="query method images/005_equals method repository.png" height=400 width=600 />
   </p>
+
+- Servis katmanında, repository sınıfında oluşturduğumuz metotlar kullanılarak, yapılmasını istediğimiz işleri belirtiriz.
+  <p>
+    <img src="query method images/006_equals method service.png" height=600 width=600 />
+  </p>
+- Kullanıcıya erişim sağlaması için restcontrollers katmanından servis katmanından ilgili metot çağırılır.
+  <p>
+    <img src="query method images/007_equals method controller.png" height=500 width=600 />
+  </p>
+- Görselde belirtildiği şekilde servis Postmande çalıştırılarak, istenilen verilerin listelenmesi sağlanır.
+  <p>
+    <img src="query method images/008_equals method postman.png" height=500 width=600 />
+  </p>
+------------
+
+**Diğer metotları ekleyip, çalıştırmak için bu yol takip edilir.**
+
+### Diğer metotların işlevleri:
+* **Like:** Bulunmasını istediğimiz bir değer, bir verinin, başında, sonunda veya başı ile sonu arasında mı diye kontrol edilmesini sağlayan metottur. Oluşturulan bir desene göre sonuçların listelenmesi sağlanır. Uygulamamızda, aranmasını istediğimiz değerden önce kullandığımız "%", bu değerin, bir kelimenin ilk harfinden sonra içerip içermediğine bakar.
+* **NotLike:** Belirtilen bir değeri, belirtilen desene göre, içermeyenleri kontrol eder. Uygulamamızda, aranmasını istediğimiz değerden sonra kullandığımız "%", bu değeri, herhangi bir kelimenin son harfinden önce içermeyenlerin listelenmesini sağlar.
