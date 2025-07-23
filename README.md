@@ -8,7 +8,8 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
   <img src="query method images/001_jpa designer.PNG" height=400 width=600 />
 </p>
 * Metotlar:
-* Equals Metodu: Veriler içerisinde, belirtilen bir değere eşit verilerin listelenmesini sağlayan metottur. Bu metot için Entity nesnemizin userName alanı kullanılmıştır.Repository katmanında metodu eklemek için sırasıyla aşağıdaki işlemler yapılır.
+
+* **Equals Metodu:** Veriler içerisinde, belirtilen bir değere eşit verilerin listelenmesini sağlayan metottur. Bu metot için Entity nesnemizin userName alanı kullanılmıştır.Repository katmanında metodu eklemek için sırasıyla aşağıdaki işlemler yapılır.
 
 1- Jpa Designer penceresinde, Find Collection çift tıklanır açılan pencerede “+” butonu ya da Add query condition tıklanır.
   <p>
@@ -23,7 +24,7 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
   <p>
     <img src="query method images/004_ add condition equals.PNG" height=400 width=600 />
   </p>
-4- Son olarak da, aranmasını istediğimiz değerin, kçük büyük harf duyarlı olmasını istemiyorsak Ignor Case seçeneği işaretlenir. İlgili metot görseldeki gibi eklenmiş olur.
+4- Son olarak da, aranmasını istediğimiz değerin, küçük büyük harf duyarlı olmasını istemiyorsak Ignor Case seçeneği işaretlenir. İlgili metot görseldeki gibi eklenmiş olur.
   <p>
     <img src="query method images/005_equals method repository.png" height=400 width=600 />
   </p>
