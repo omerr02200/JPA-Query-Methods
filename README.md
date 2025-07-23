@@ -28,3 +28,16 @@ Veriler üzerinde çalışırken, kullanıcılara, belirli kriterlere göre veri
   <p>
     <img src="query method images/005_equals method repository.png" height=400 width=600 />
   </p>
+
+- Servis katmanında, repository sınıfında oluşturduğumuz metotlar kullanılarak, yapılmasını istediğimiz işleri belirtiriz.
+  <p>
+    <img src="query method images/006_equals method service.png" height=600 width=600 />
+  </p>
+- Kullanıcıya erişim sağlaması için restcontrollers katmanından servis katmanından ilgili metot çağırılır.
+  <p>
+    <img src="query method images/007_equals method controller.png" height=500 width=600 />
+  </p>
+- Görselde belirtildiği şekilde servis Postmande çalıştırılarak, istenilen verilerin listelenmesi sağlanır.
+  <p>
+    <img src="query method images/008_equals method postman.png" height=500 width=600 />
+  </p>
